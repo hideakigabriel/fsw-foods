@@ -30,8 +30,8 @@ export const ProductItem = ({ product }: ProductItemProps) => {
 
         {product.discountPercentage && (
           <div className="absolute left-2 top-2 gap-[2px]">
-            <ArrowDownIcon size={12} />
             <span className="flex items-center rounded-full bg-primary px-2 py-[2px] text-xs font-semibold text-white">
+              <ArrowDownIcon size={12} />
               {product.discountPercentage}%
             </span>
           </div>
