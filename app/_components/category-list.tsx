@@ -3,7 +3,7 @@
 import { db } from "../_lib/prisma";
 import { CategoryItem } from "./category-item";
 
-export const CategoryList = async () => {
+const CategoryList = async () => {
   const categories = await db.category.findMany({});
 
   return (
@@ -14,3 +14,5 @@ export const CategoryList = async () => {
     </div>
   );
 };
+
+export default CategoryList;

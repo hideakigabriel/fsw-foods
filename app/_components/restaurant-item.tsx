@@ -7,8 +7,7 @@ import { Button } from "./ui/button";
 interface RestaurantItemProps {
   restaurant: Restaurant;
 }
-
-export const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
+const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
   return (
     <div className="min-w-[266px] max-w-[266px] space-y-3">
       <div className="relative h-[136px] w-full">
@@ -54,3 +53,5 @@ export const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
     </div>
   );
 };
+
+export default RestaurantItem;

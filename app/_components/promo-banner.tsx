@@ -1,6 +1,6 @@
 import Image, { ImageProps } from "next/image";
 
-export const PromoBanner = (props: ImageProps) => {
+const PromoBanner = (props: ImageProps) => {
   return (
     <div className="px-5 pt-6">
       <Image
@@ -14,3 +14,5 @@ export const PromoBanner = (props: ImageProps) => {
     </div>
   );
 };
+
+export default PromoBanner;

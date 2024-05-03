@@ -17,7 +17,7 @@ interface ProductItemProps {
   }>;
 }
 
-export const ProductItem = ({ product }: ProductItemProps) => {
+const ProductItem = ({ product }: ProductItemProps) => {
   return (
     <div className="w-[150px] min-w-[150px] space-y-2">
       <div className="relative h-[150px] w-full">
@@ -58,3 +58,5 @@ export const ProductItem = ({ product }: ProductItemProps) => {
     </div>
   );
 };
+
+export default ProductItem;

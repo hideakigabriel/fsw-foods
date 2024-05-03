@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { MenuIcon } from "lucide-react";
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className="flex justify-between px-5 pt-6">
       <Image src="/logo.png" alt="FSW Foods" height={30} width={140} />
@@ -16,3 +16,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default Header;
